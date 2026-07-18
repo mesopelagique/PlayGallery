@@ -1,0 +1,75 @@
+name: Build
+on:
+  push:
+    paths:
+      - '**.4dm'
+  pull_request:
+    paths:
+      - '**.4dm'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v5
+    - name: Check out ArcanoidGame
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/ArcanoidGame
+        path: Components/ArcanoidGame.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out 2048
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/2048
+        path: Components/2048.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out Taquin
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Taquin
+        path: Components/Taquin.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out Puissance4D
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Puissance4D
+        path: Components/Puissance4D.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out Memory4D
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Memory4D
+        path: Components/Memory4D.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out EscapingButton
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/EscapingButton
+        path: Components/EscapingButton.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out ActivityIndicator
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/ActivityIndicator
+        path: Components/ActivityIndicator.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out MatrixRain
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/MatrixRain
+        path: Components/MatrixRain.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Build
+      uses: 4d/build4d-action@main

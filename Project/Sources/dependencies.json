@@ -1,0 +1,36 @@
+{
+	"dependencies": {
+		"ArcanoidGame": {
+			"github": "mesopelagique/ArcanoidGame",
+			"version": "latest"
+		},
+		"2048": {
+			"github": "mesopelagique/2048",
+			"version": "latest"
+		},
+		"Taquin": {
+			"github": "mesopelagique/Taquin",
+			"version": "latest"
+		},
+		"Puissance4D": {
+			"github": "mesopelagique/Puissance4D",
+			"version": "latest"
+		},
+		"Memory4D": {
+			"github": "mesopelagique/Memory4D",
+			"version": "latest"
+		},
+		"EscapingButton": {
+			"github": "mesopelagique/EscapingButton",
+			"version": "latest"
+		},
+		"ActivityIndicator": {
+			"github": "mesopelagique/ActivityIndicator",
+			"version": "latest"
+		},
+		"MatrixRain": {
+			"github": "mesopelagique/MatrixRain",
+			"version": "latest"
+		}
+	}
+}

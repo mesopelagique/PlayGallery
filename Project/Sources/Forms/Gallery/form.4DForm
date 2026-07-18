@@ -1,0 +1,507 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "Gallery",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"title": {
+					"type": "text",
+					"text": "Gallery",
+					"left": 20,
+					"top": 18,
+					"width": 300,
+					"height": 32,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"stroke": "automatic"
+				},
+				"subtitle": {
+					"type": "text",
+					"text": "Every game and effect, loaded as a component. Pick one.",
+					"left": 20,
+					"top": 52,
+					"width": 520,
+					"height": 18,
+					"fontSize": 12,
+					"stroke": "#8A929C"
+				},
+				"card_1": {
+					"type": "rectangle",
+					"left": 20,
+					"top": 92,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_1": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/ArcanoidGame.png",
+					"pictureFormat": "scaled",
+					"left": 32,
+					"top": 110,
+					"width": 48,
+					"height": 48
+				},
+				"name_1": {
+					"type": "text",
+					"text": "Arcanoid",
+					"left": 92,
+					"top": 104,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_1": {
+					"type": "text",
+					"text": "Brick breaker — the ball is a chain of linear tweens",
+					"left": 92,
+					"top": 128,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_1": {
+					"type": "button",
+					"text": "",
+					"left": 20,
+					"top": 92,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_2": {
+					"type": "rectangle",
+					"left": 348,
+					"top": 92,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_2": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/2048.png",
+					"pictureFormat": "scaled",
+					"left": 360,
+					"top": 110,
+					"width": 48,
+					"height": 48
+				},
+				"name_2": {
+					"type": "text",
+					"text": "2048",
+					"left": 420,
+					"top": 104,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_2": {
+					"type": "text",
+					"text": "Tiles hopping between known cells",
+					"left": 420,
+					"top": 128,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_2": {
+					"type": "button",
+					"text": "",
+					"left": 348,
+					"top": 92,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_3": {
+					"type": "rectangle",
+					"left": 20,
+					"top": 188,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_3": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/Taquin.png",
+					"pictureFormat": "scaled",
+					"left": 32,
+					"top": 206,
+					"width": 48,
+					"height": 48
+				},
+				"name_3": {
+					"type": "text",
+					"text": "Taquin",
+					"left": 92,
+					"top": 200,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_3": {
+					"type": "text",
+					"text": "15-puzzle — the shuffle walks the hole, always solvable",
+					"left": 92,
+					"top": 224,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_3": {
+					"type": "button",
+					"text": "",
+					"left": 20,
+					"top": 188,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_4": {
+					"type": "rectangle",
+					"left": 348,
+					"top": 188,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_4": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/Puissance4D.png",
+					"pictureFormat": "scaled",
+					"left": 360,
+					"top": 206,
+					"width": 48,
+					"height": 48
+				},
+				"name_4": {
+					"type": "text",
+					"text": "Puissance4D",
+					"left": 420,
+					"top": 200,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_4": {
+					"type": "text",
+					"text": "Connect Four — the fall is one tween, bounced on landing",
+					"left": 420,
+					"top": 224,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_4": {
+					"type": "button",
+					"text": "",
+					"left": 348,
+					"top": 188,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_5": {
+					"type": "rectangle",
+					"left": 20,
+					"top": 284,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_5": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/Memory4D.png",
+					"pictureFormat": "scaled",
+					"left": 32,
+					"top": 302,
+					"width": 48,
+					"height": 48
+				},
+				"name_5": {
+					"type": "text",
+					"text": "Memory4D",
+					"left": 92,
+					"top": 296,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_5": {
+					"type": "text",
+					"text": "Matching pairs of 4D icons — the flip, by hand",
+					"left": 92,
+					"top": 320,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_5": {
+					"type": "button",
+					"text": "",
+					"left": 20,
+					"top": 284,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_6": {
+					"type": "rectangle",
+					"left": 348,
+					"top": 284,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_6": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/EscapingButton.png",
+					"pictureFormat": "scaled",
+					"left": 360,
+					"top": 302,
+					"width": 48,
+					"height": 48
+				},
+				"name_6": {
+					"type": "text",
+					"text": "EscapingButton",
+					"left": 420,
+					"top": 296,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_6": {
+					"type": "text",
+					"text": "The OK button that will not be clicked",
+					"left": 420,
+					"top": 320,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_6": {
+					"type": "button",
+					"text": "",
+					"left": 348,
+					"top": 284,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_7": {
+					"type": "rectangle",
+					"left": 20,
+					"top": 380,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_7": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/ActivityIndicator.png",
+					"pictureFormat": "scaled",
+					"left": 32,
+					"top": 398,
+					"width": 48,
+					"height": 48
+				},
+				"name_7": {
+					"type": "text",
+					"text": "ActivityIndicator",
+					"left": 92,
+					"top": 392,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_7": {
+					"type": "text",
+					"text": "Eight spinners, each a loop of tweens",
+					"left": 92,
+					"top": 416,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_7": {
+					"type": "button",
+					"text": "",
+					"left": 20,
+					"top": 380,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_8": {
+					"type": "rectangle",
+					"left": 348,
+					"top": 380,
+					"width": 316,
+					"height": 84,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_8": {
+					"type": "picture",
+					"picture": "/RESOURCES/logos/MatrixRain.png",
+					"pictureFormat": "scaled",
+					"left": 360,
+					"top": 398,
+					"width": 48,
+					"height": 48
+				},
+				"name_8": {
+					"type": "text",
+					"text": "MatrixRain",
+					"left": 420,
+					"top": 392,
+					"width": 162,
+					"height": 22,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_8": {
+					"type": "text",
+					"text": "Green glyphs falling through the dark",
+					"left": 420,
+					"top": 416,
+					"width": 230,
+					"height": 36,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				},
+				"play_8": {
+					"type": "button",
+					"text": "",
+					"left": 348,
+					"top": 380,
+					"width": 316,
+					"height": 84,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"hint": {
+					"type": "text",
+					"text": "Each entry is a dependency; closing a game returns you here.",
+					"left": 20,
+					"top": 486,
+					"width": 520,
+					"height": 18,
+					"fontSize": 11,
+					"stroke": "#8A929C"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 1
+}
