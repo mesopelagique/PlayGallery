@@ -31,6 +31,10 @@
 		"MatrixRain": {
 			"github": "mesopelagique/MatrixRain",
 			"version": "latest"
+		},
+		"Hero": {
+			"github": "mesopelagique/Hero",
+			"version": "latest"
 		}
 	}
 }

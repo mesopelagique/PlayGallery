@@ -67,6 +67,13 @@ jobs:
           path: Components/MatrixRain.4dbase
           ref: main
           fetch-depth: 0
+      - name: Check out Hero
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/Hero
+          path: Components/Hero.4dbase
+          ref: main
+          fetch-depth: 0
       - name: BuildAndPackage
         id: build-package
         uses: 4d/build4d-action@main

@@ -1,7 +1,8 @@
 /*
 CardFx — the press a card gives back before its component opens, animated by
-Hero (cs.hero), which arrives here as a secondary dependency of
-every entry in the gallery.
+Hero (cs.hero). This base calls cs.hero itself, so Hero is a direct dependency and
+is declared as one: CI checks out only what dependencies.json names, and relying
+on it arriving behind another component builds locally but not on a runner.
 
 A card is four objects — the panel, the logo, the name, the blurb — so a press has
 to move all four as one. It is a TRANSLATION, not a scale: shrinking a text
