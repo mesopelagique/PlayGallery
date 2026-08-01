@@ -10,6 +10,10 @@ Open the project — `On Startup` shows the gallery. Click **Play** on a card; c
 
 ## In the gallery
 
+The cards are grouped the same way the window is: games, graphical components, then effects.
+
+### Games
+
 | Project | What it is |
 |---|---|
 | [ArcanoidGame](https://github.com/mesopelagique/ArcanoidGame) | Brick breaker — the ball is a chain of linear tweens, so it cannot tunnel |
@@ -18,5 +22,19 @@ Open the project — `On Startup` shows the gallery. Click **Play** on a card; c
 | [Puissance4D](https://github.com/mesopelagique/Puissance4D) | Connect Four — the fall is one tween, bounced on landing |
 | [Memory4D](https://github.com/mesopelagique/Memory4D) | Matching pairs of 4D icons; the card flip is a matched-geometry move by hand |
 | [EscapingButton](https://github.com/mesopelagique/EscapingButton) | The OK button that will not be clicked |
+
+### Graphical components
+
+| Project | What it is |
+|---|---|
+| [Toast](https://github.com/mesopelagique/Toast) | Notifications that slide in, wait, and slide out — the dwell is `.delay()` on the exit tween |
+| [SegmentedControl](https://github.com/mesopelagique/SegmentedControl) | One pill tweened to the chosen segment's own box — matchedGeometry, straight |
+| [FlipList](https://github.com/mesopelagique/FlipList) | Add, remove, shuffle — the rows glide to new places via `capture()`+`heroFrom()` (the FLIP technique) |
 | [ActivityIndicator](https://github.com/mesopelagique/ActivityIndicator) | Eight spinners, each one a loop of tweens |
+
+### Effects
+
+| Project | What it is |
+|---|---|
 | [MatrixRain](https://github.com/mesopelagique/MatrixRain) | Green glyphs falling through the dark |
+| [Confetti](https://github.com/mesopelagique/Confetti) | A celebration burst falling under gravity |
