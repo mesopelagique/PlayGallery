@@ -35,6 +35,22 @@
 		"Hero": {
 			"github": "mesopelagique/Hero",
 			"version": "latest"
+		},
+		"Toast": {
+			"github": "mesopelagique/Toast",
+			"version": "latest"
+		},
+		"SegmentedControl": {
+			"github": "mesopelagique/SegmentedControl",
+			"version": "latest"
+		},
+		"FlipList": {
+			"github": "mesopelagique/FlipList",
+			"version": "latest"
+		},
+		"Confetti": {
+			"github": "mesopelagique/Confetti",
+			"version": "latest"
 		}
 	}
 }

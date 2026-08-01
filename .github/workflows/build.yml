@@ -78,5 +78,33 @@ jobs:
         path: Components/Hero.4dbase
         ref: main
         fetch-depth: 0
+    - name: Check out Toast
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Toast
+        path: Components/Toast.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out SegmentedControl
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/SegmentedControl
+        path: Components/SegmentedControl.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out FlipList
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/FlipList
+        path: Components/FlipList.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out Confetti
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Confetti
+        path: Components/Confetti.4dbase
+        ref: main
+        fetch-depth: 0
     - name: Build
       uses: 4d/build4d-action@main

@@ -2,9 +2,11 @@
 Opens the component behind card $1.
 
 Written out one branch per card rather than dispatched by name, on purpose: the
-compiler then checks all eight. If a component fails to load, this base stops
+compiler then checks all twelve. If a component fails to load, this base stops
 compiling and names the method it could not find, instead of failing silently at
 the click.
+
+Order matches the gallery layout: games, then graphical components, then effects.
 */
 #DECLARE($index : Integer)
 
@@ -43,12 +45,32 @@ Case of
 		//______________________________________________________
 	: ($index=7)
 
-		PLAY_ActivityIndicator
+		PLAY_Toast
 
 		//______________________________________________________
 	: ($index=8)
 
+		PLAY_SegmentedControl
+
+		//______________________________________________________
+	: ($index=9)
+
+		PLAY_FlipList
+
+		//______________________________________________________
+	: ($index=10)
+
+		PLAY_ActivityIndicator
+
+		//______________________________________________________
+	: ($index=11)
+
 		PLAY_MatrixRain
+
+		//______________________________________________________
+	: ($index=12)
+
+		PLAY_Confetti
 
 		//______________________________________________________
 End case

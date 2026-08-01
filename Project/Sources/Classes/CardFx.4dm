@@ -15,7 +15,7 @@ alongside it.
 */
 
 property transition : cs.hero.ElementTransition
-property cards : Integer:=8
+property cards : Integer:=12
 property homes : Collection      // [i] -> the four objects' resting top, read from the form
 property pending : Integer:=-1
 property busy : Boolean:=False
