@@ -2,7 +2,7 @@
 Opens the component behind card $1.
 
 Written out one branch per card rather than dispatched by name, on purpose: the
-compiler then checks all eighteen. If a component fails to load, this base stops
+compiler then checks all nineteen. If a component fails to load, this base stops
 compiling and names the method it could not find, instead of failing silently at
 the click.
 
@@ -95,10 +95,15 @@ Case of
 			//______________________________________________________
 		: ($index=17)
 
-			PLAY_MatrixRain
+			PLAY_ColorPicker
 
 			//______________________________________________________
 		: ($index=18)
+
+			PLAY_MatrixRain
+
+			//______________________________________________________
+		: ($index=19)
 
 			PLAY_Confetti
 

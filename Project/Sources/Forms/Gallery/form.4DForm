@@ -967,8 +967,8 @@
 				},
 				"card_17": {
 					"type": "rectangle",
-					"left": 20,
-					"top": 800,
+					"left": 270,
+					"top": 664,
 					"width": 236,
 					"height": 92,
 					"borderRadius": 10,
@@ -977,6 +977,61 @@
 				},
 				"logo_17": {
 					"type": "picture",
+					"picture": "/RESOURCES/logos/ColorPicker.png",
+					"pictureFormat": "scaled",
+					"left": 282,
+					"top": 678,
+					"width": 44,
+					"height": 44
+				},
+				"name_17": {
+					"type": "text",
+					"text": "ColorPicker",
+					"left": 334,
+					"top": 676,
+					"width": 162,
+					"height": 20,
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#2B3440"
+				},
+				"blurb_17": {
+					"type": "text",
+					"text": "Square, hue, RGB sliders, hex & swatches — lerps in HSV",
+					"left": 334,
+					"top": 700,
+					"width": 162,
+					"height": 50,
+					"fontSize": 10,
+					"stroke": "#8A929C"
+				},
+				"play_17": {
+					"type": "button",
+					"text": "",
+					"left": 270,
+					"top": 664,
+					"width": 236,
+					"height": 92,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"card_18": {
+					"type": "rectangle",
+					"left": 20,
+					"top": 800,
+					"width": 236,
+					"height": 92,
+					"borderRadius": 10,
+					"fill": "#F7F8FA",
+					"stroke": "#E1E5EA"
+				},
+				"logo_18": {
+					"type": "picture",
 					"picture": "/RESOURCES/logos/MatrixRain.png",
 					"pictureFormat": "scaled",
 					"left": 32,
@@ -984,7 +1039,7 @@
 					"width": 44,
 					"height": 44
 				},
-				"name_17": {
+				"name_18": {
 					"type": "text",
 					"text": "MatrixRain",
 					"left": 84,
@@ -995,7 +1050,7 @@
 					"fontWeight": "bold",
 					"stroke": "#2B3440"
 				},
-				"blurb_17": {
+				"blurb_18": {
 					"type": "text",
 					"text": "Green glyphs falling through the dark",
 					"left": 84,
@@ -1005,7 +1060,7 @@
 					"fontSize": 10,
 					"stroke": "#8A929C"
 				},
-				"play_17": {
+				"play_18": {
 					"type": "button",
 					"text": "",
 					"left": 20,
@@ -1020,7 +1075,7 @@
 					"fill": "transparent",
 					"borderStyle": "none"
 				},
-				"card_18": {
+				"card_19": {
 					"type": "rectangle",
 					"left": 270,
 					"top": 800,
@@ -1030,7 +1085,7 @@
 					"fill": "#F7F8FA",
 					"stroke": "#E1E5EA"
 				},
-				"logo_18": {
+				"logo_19": {
 					"type": "picture",
 					"picture": "/RESOURCES/logos/Confetti.png",
 					"pictureFormat": "scaled",
@@ -1039,7 +1094,7 @@
 					"width": 44,
 					"height": 44
 				},
-				"name_18": {
+				"name_19": {
 					"type": "text",
 					"text": "Confetti",
 					"left": 334,
@@ -1050,7 +1105,7 @@
 					"fontWeight": "bold",
 					"stroke": "#2B3440"
 				},
-				"blurb_18": {
+				"blurb_19": {
 					"type": "text",
 					"text": "A celebration burst falling under gravity",
 					"left": 334,
@@ -1060,7 +1115,7 @@
 					"fontSize": 10,
 					"stroke": "#8A929C"
 				},
-				"play_18": {
+				"play_19": {
 					"type": "button",
 					"text": "",
 					"left": 270,

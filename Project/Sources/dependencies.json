@@ -75,6 +75,10 @@
 		"ProgressBar": {
 			"github": "mesopelagique/ProgressBar",
 			"version": "latest"
+		},
+		"ColorPicker": {
+			"github": "mesopelagique/ColorPicker",
+			"version": "latest"
 		}
 	}
 }
