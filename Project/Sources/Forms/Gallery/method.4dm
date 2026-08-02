@@ -8,6 +8,9 @@ whole contract between this base and the components.
 A click does not launch straight away: cs.CardFx presses the card first, and the
 component is opened from the end of that animation. The dialog is modal, so
 opening it any earlier would swallow the press.
+
+A right-click plays nothing: cs.CardMenu answers it with the card's repository and
+the folder the component was loaded from.
 */
 
 Case of
@@ -17,6 +20,7 @@ Case of
 
 		Form.transition:=cs.hero.ElementTransition.new()
 		Form.fx:=cs.CardFx.new(Form.transition)
+		Form.menu:=cs.CardMenu.new()
 
 		//______________________________________________________
 	: (Form event code=On Timer)
@@ -26,10 +30,23 @@ Case of
 		//______________________________________________________
 	: (Form event code=On Clicked)
 
-		If (Position("play_"; FORM Event.objectName)=1)
+		If (Contextual click)  // right-click, or ctrl-click on macOS
 
-			// play_1 .. play_8
-			Form.fx.press(Num(Substring(FORM Event.objectName; 6)))
+			/*
+			A contextual click plays nothing. The card is taken from under the mouse and
+			not from FORM Event.objectName, so it makes no difference whether the click
+			was reported by the button covering the card or by the form under it.
+			*/
+			Form.menu.show(Form.menu.cardUnderMouse())
+
+		Else
+
+			If (Position("play_"; FORM Event.objectName)=1)
+
+				// play_1 .. play_12
+				Form.fx.press(Num(Substring(FORM Event.objectName; 6)))
+
+			End if
 
 		End if
 

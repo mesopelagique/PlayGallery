@@ -8,6 +8,8 @@
 
 Open the project — `On Startup` shows the gallery. Click **Play** on a card; closing that window returns you here.
 
+Right-click a card to reach the project behind it: **Open on GitHub**, or **Show in Finder**. The folder shown is the one the component was actually loaded from — the dependency cache for a component downloaded from a release, or your own working copy when `environment4d.json` redirects that dependency to it.
+
 ## In the gallery
 
 The cards are grouped the same way the window is: games, graphical components, then effects.

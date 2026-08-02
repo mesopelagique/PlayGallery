@@ -484,10 +484,10 @@
 				},
 				"hint": {
 					"type": "text",
-					"text": "Each entry is a dependency; closing a game returns you here.",
+					"text": "Each entry is a dependency; closing a game returns you here. Right-click a card for its repository or its folder.",
 					"left": 20,
 					"top": 756,
-					"width": 520,
+					"width": 644,
 					"height": 18,
 					"fontSize": 11,
 					"stroke": "#8A929C"
