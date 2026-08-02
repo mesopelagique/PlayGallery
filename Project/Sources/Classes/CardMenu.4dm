@@ -28,12 +28,8 @@ property repositories : Object      // component name -> its repository URL
 
 Class constructor()
 
-	/*
-	The gallery order: the order the cards are laid out in, and the order LAUNCH_ENTRY
-	branches on. Only the first entry needs a second look — the card is labelled
-	"Arcanoid", the component is ArcanoidGame.
-	*/
-	This.dependencies:=["ArcanoidGame"; "2048"; "Taquin"; "Puissance4D"; "Memory4D"; "EscapingButton"; "Toast"; "SegmentedControl"; "FlipList"; "ActivityIndicator"; "MatrixRain"; "Confetti"]
+	// the gallery order, read from the form itself rather than repeated here — see _dependencies()
+	This.dependencies:=This._dependencies()
 
 	This.repositories:=This._repositories()
 
@@ -117,6 +113,73 @@ Function _item($label : Text; $enabled : Boolean) : Text
 	End if
 
 	return "("+$label
+
+	// === === === === === === === === === === === === === === === === === === === === === === === === === ===
+/*
+The component behind each card, in gallery order — read from the Gallery form
+itself, which is the only place that order actually lives (card_N, logo_N…).
+Repeating it here as a literal is how a card ends up with no menu at all, or the
+wrong one: a card added to the form is invisible to this class until the form
+says so.
+*/
+Function _dependencies() : Collection
+
+	var $dependencies : Collection:=[]
+	var $objects : Object:=This._formObjects(This._read(File("/SOURCES/Forms/Gallery/form.4DForm")))
+
+	var $index : Integer:=1
+
+	While ($objects["logo_"+String($index)]#Null)
+
+		$dependencies.push(This._nameFromPicture($objects["logo_"+String($index)].picture))
+
+		$index:=$index+1
+
+	End while
+
+	return $dependencies
+
+	// === === === === === === === === === === === === === === === === === === === === === === === === === ===
+	// Every object of every page, flattened — a card's objects may sit on either
+Function _formObjects($form : Object) : Object
+
+	var $objects : Object:={}
+
+	If (Value type($form.pages)#Is collection)
+
+		return $objects
+
+	End if
+
+	var $page : Object
+
+	For each ($page; $form.pages)
+
+		If (Value type($page.objects)=Is object)
+
+			var $key : Text
+
+			For each ($key; $page.objects)
+
+				$objects[$key]:=$page.objects[$key]
+
+			End for each
+
+		End if
+
+	End for each
+
+	return $objects
+
+	// === === === === === === === === === === === === === === === === === === === === === === === === === ===
+	// "/RESOURCES/logos/ArcanoidGame.png" -> "ArcanoidGame"
+Function _nameFromPicture($path : Text) : Text
+
+	var $segments : Collection:=Split string($path; "/")
+	var $fileName : Text:=$segments[$segments.length-1]
+	var $withoutExtension : Collection:=Split string($fileName; ".")
+
+	return $withoutExtension[0]
 
 	// === === === === === === === === === === === === === === === === === === === === === === === === === ===
 	// The repository URL of every component this project declares
