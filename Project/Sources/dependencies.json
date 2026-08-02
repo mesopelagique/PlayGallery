@@ -51,6 +51,30 @@
 		"Confetti": {
 			"github": "mesopelagique/Confetti",
 			"version": "latest"
+		},
+		"ToggleSwitch": {
+			"github": "mesopelagique/ToggleSwitch",
+			"version": "latest"
+		},
+		"Badge": {
+			"github": "mesopelagique/Badge",
+			"version": "latest"
+		},
+		"Stepper": {
+			"github": "mesopelagique/Stepper",
+			"version": "latest"
+		},
+		"SkeletonLoader": {
+			"github": "mesopelagique/SkeletonLoader",
+			"version": "latest"
+		},
+		"Accordion": {
+			"github": "mesopelagique/Accordion",
+			"version": "latest"
+		},
+		"ProgressBar": {
+			"github": "mesopelagique/ProgressBar",
+			"version": "latest"
 		}
 	}
 }

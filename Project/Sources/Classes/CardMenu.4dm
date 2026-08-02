@@ -266,6 +266,13 @@ Function _lockedFolder($name : Text) : 4D.Folder
 
 	End if
 
+	// a dependency the manager could not find is written down with an empty path
+	If ($entry.path="")
+
+		return Null
+
+	End if
+
 	return This._existing(Folder(Convert path system to POSIX($entry.path)))
 
 	// === === === === === === === === === === === === === === === === === === === === === === === === === ===

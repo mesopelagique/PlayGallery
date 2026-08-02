@@ -106,5 +106,26 @@ jobs:
         path: Components/Confetti.4dbase
         ref: main
         fetch-depth: 0
+    - name: Check out ToggleSwitch
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/ToggleSwitch
+        path: Components/ToggleSwitch.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out Badge
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Badge
+        path: Components/Badge.4dbase
+        ref: main
+        fetch-depth: 0
+    - name: Check out Stepper
+      uses: actions/checkout@v5
+      with:
+        repository: mesopelagique/Stepper
+        path: Components/Stepper.4dbase
+        ref: main
+        fetch-depth: 0
     - name: Build
       uses: 4d/build4d-action@main

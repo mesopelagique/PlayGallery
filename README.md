@@ -33,6 +33,12 @@ The cards are grouped the same way the window is: games, graphical components, t
 | [SegmentedControl](https://github.com/mesopelagique/SegmentedControl) | One pill tweened to the chosen segment's own box — matchedGeometry, straight |
 | [FlipList](https://github.com/mesopelagique/FlipList) | Add, remove, shuffle — the rows glide to new places via `capture()`+`heroFrom()` (the FLIP technique) |
 | [ActivityIndicator](https://github.com/mesopelagique/ActivityIndicator) | Eight spinners, each one a loop of tweens |
+| [ToggleSwitch](https://github.com/mesopelagique/ToggleSwitch) | iOS switch — the thumb springs over, the track lerps grey → green |
+| [Badge](https://github.com/mesopelagique/Badge) | A count badge that scales in, bounces, and widens for 9 → 10 |
+| [Stepper](https://github.com/mesopelagique/Stepper) | +/– with a number flip, a button pulse, and a ripple |
+| [SkeletonLoader](https://github.com/mesopelagique/SkeletonLoader) | Placeholders shimmer, then `share()` morphs them into the real content |
+| [Accordion](https://github.com/mesopelagique/Accordion) | A body grows, the siblings slide down, the lines fade in staggered |
+| [ProgressBar](https://github.com/mesopelagique/ProgressBar) | The fill grows, a sheen sweeps across, and it pulses green at 100% |
 
 ### Effects
 
