@@ -123,6 +123,62 @@ jobs:
           path: Components/Stepper.4dbase
           ref: main
           fetch-depth: 0
+      - name: Check out SkeletonLoader
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/SkeletonLoader
+          path: Components/SkeletonLoader.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out Accordion
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/Accordion
+          path: Components/Accordion.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out ProgressBar
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/ProgressBar
+          path: Components/ProgressBar.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out ColorPicker
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/ColorPicker
+          path: Components/ColorPicker.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out CommandPalette
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/CommandPalette
+          path: Components/CommandPalette.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out NyanCat
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/NyanCat
+          path: Components/NyanCat.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out Snake
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/Snake
+          path: Components/Snake.4dbase
+          ref: main
+          fetch-depth: 0
+      - name: Check out Gemboard
+        uses: actions/checkout@v5
+        with:
+          repository: mesopelagique/Gemboard
+          path: Components/Gemboard.4dbase
+          ref: main
+          fetch-depth: 0
       - name: BuildAndPackage
         id: build-package
         uses: 4d/build4d-action@main

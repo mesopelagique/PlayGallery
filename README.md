@@ -24,6 +24,8 @@ The cards are grouped the same way the window is: games, graphical components, t
 | [Puissance4D](https://github.com/mesopelagique/Puissance4D) | Connect Four — the fall is one tween, bounced on landing |
 | [Memory4D](https://github.com/mesopelagique/Memory4D) | Matching pairs of 4D icons; the card flip is a matched-geometry move by hand |
 | [EscapingButton](https://github.com/mesopelagique/EscapingButton) | The OK button that will not be clicked |
+| [Snake](https://github.com/mesopelagique/Snake) | The snake hops cell to cell, each step a tween |
+| [Gemboard](https://github.com/mesopelagique/Gemboard) | Match-3 — swap, pop, then gravity, and cascades |
 
 ### Graphical components
 
@@ -39,6 +41,8 @@ The cards are grouped the same way the window is: games, graphical components, t
 | [SkeletonLoader](https://github.com/mesopelagique/SkeletonLoader) | Placeholders shimmer, then `share()` morphs them into the real content |
 | [Accordion](https://github.com/mesopelagique/Accordion) | A body grows, the siblings slide down, the lines fade in staggered |
 | [ProgressBar](https://github.com/mesopelagique/ProgressBar) | The fill grows, a sheen sweeps across, and it pulses green at 100% |
+| [ColorPicker](https://github.com/mesopelagique/ColorPicker) | A live SV square, hue strip, RGB sliders, hex and swatches — the preview lerps in HSV |
+| [CommandPalette](https://github.com/mesopelagique/CommandPalette) | Type to filter — matches fly to the top by FLIP, a selection pill glides |
 
 ### Effects
 
@@ -46,3 +50,4 @@ The cards are grouped the same way the window is: games, graphical components, t
 |---|---|
 | [MatrixRain](https://github.com/mesopelagique/MatrixRain) | Green glyphs falling through the dark |
 | [Confetti](https://github.com/mesopelagique/Confetti) | A celebration burst falling under gravity |
+| [NyanCat](https://github.com/mesopelagique/NyanCat) | Move the mouse — the cat trails a fading rainbow |

@@ -79,6 +79,22 @@
 		"ColorPicker": {
 			"github": "mesopelagique/ColorPicker",
 			"version": "latest"
+		},
+		"CommandPalette": {
+			"github": "mesopelagique/CommandPalette",
+			"version": "latest"
+		},
+		"NyanCat": {
+			"github": "mesopelagique/NyanCat",
+			"version": "latest"
+		},
+		"Snake": {
+			"github": "mesopelagique/Snake",
+			"version": "latest"
+		},
+		"Gemboard": {
+			"github": "mesopelagique/Gemboard",
+			"version": "latest"
 		}
 	}
 }

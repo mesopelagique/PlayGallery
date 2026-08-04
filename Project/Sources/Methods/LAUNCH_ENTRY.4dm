@@ -2,7 +2,7 @@
 Opens the component behind card $1.
 
 Written out one branch per card rather than dispatched by name, on purpose: the
-compiler then checks all nineteen. If a component fails to load, this base stops
+compiler then checks all twenty-three. If a component fails to load, this base stops
 compiling and names the method it could not find, instead of failing silently at
 the click.
 
@@ -45,67 +45,87 @@ Case of
 			//______________________________________________________
 		: ($index=7)
 
-			PLAY_Toast
+			PLAY_Snake
 
 			//______________________________________________________
 		: ($index=8)
 
-			PLAY_SegmentedControl
+			PLAY_Gemboard
 
 			//______________________________________________________
 		: ($index=9)
 
-			PLAY_FlipList
+			PLAY_Toast
 
 			//______________________________________________________
 		: ($index=10)
 
-			PLAY_ActivityIndicator
+			PLAY_SegmentedControl
 
 			//______________________________________________________
 		: ($index=11)
 
-			PLAY_ToggleSwitch
+			PLAY_FlipList
 
 			//______________________________________________________
 		: ($index=12)
 
-			PLAY_Badge
+			PLAY_ActivityIndicator
 
 			//______________________________________________________
 		: ($index=13)
 
-			PLAY_Stepper
+			PLAY_ToggleSwitch
 
 			//______________________________________________________
 		: ($index=14)
 
-			PLAY_SkeletonLoader
+			PLAY_Badge
 
 			//______________________________________________________
 		: ($index=15)
 
-			PLAY_Accordion
+			PLAY_Stepper
 
 			//______________________________________________________
 		: ($index=16)
 
-			PLAY_ProgressBar
+			PLAY_SkeletonLoader
 
 			//______________________________________________________
 		: ($index=17)
 
-			PLAY_ColorPicker
+			PLAY_Accordion
 
 			//______________________________________________________
 		: ($index=18)
 
-			PLAY_MatrixRain
+			PLAY_ProgressBar
 
 			//______________________________________________________
 		: ($index=19)
 
+			PLAY_ColorPicker
+
+			//______________________________________________________
+		: ($index=20)
+
+			PLAY_CommandPalette
+
+			//______________________________________________________
+		: ($index=21)
+
+			PLAY_MatrixRain
+
+			//______________________________________________________
+		: ($index=22)
+
 			PLAY_Confetti
+
+			//______________________________________________________
+		: ($index=23)
+
+			PLAY_NyanCat
 
 			//______________________________________________________
 End case
